@@ -1,14 +1,11 @@
 name: Run Tests and Check Coverage
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 
 jobs:
-  run-tests:  # Use a unique job ID
-    name: Run Tests and Coverage  # This is what will appear in GitHub checks
+  test:
     runs-on: ubuntu-latest
 
     steps:
