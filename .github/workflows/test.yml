@@ -7,7 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  run-tests:  # Use a unique job ID
+    name: Run Tests and Coverage  # This is what will appear in GitHub checks
     runs-on: ubuntu-latest
 
     steps:
